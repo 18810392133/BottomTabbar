@@ -8,7 +8,7 @@
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
        />
 
     <RadioGroup
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
-        android:background="#dcdcdc"
+        android:background="#fff700"
         android:orientation="horizontal">
 
         <RadioButton
@@ -24,14 +24,14 @@
             style="@style/Custom.TabRadioButton"
             android:checked="true"
             android:drawableTop="@drawable/tab_sign_selector"
-            android:text="今日" >
+            android:text="首页" >
         </RadioButton>
 
         <RadioButton
             android:id="@+id/record_tab"
             style="@style/Custom.TabRadioButton"
             android:drawableTop="@drawable/tab_record_selector"
-            android:text="记录" />
+            android:text="社区" />
 
         <View style="@style/Custom.TabRadioButton" />
 
