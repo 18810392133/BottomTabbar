@@ -39,7 +39,6 @@
             android:theme="@style/DynamicTheme" />
         <activity android:name=".dynamic.TestPicActivity" />
         <activity android:name=".dynamic.ImageGridActivity" />
-        <activity android:name=".Shouye"></activity>
     </application>
 
 </manifest>

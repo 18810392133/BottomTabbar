@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><!--加入空白区域让排版更加好看-->
+<View android:background="#ffffff"
+    android:layout_height="8dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
