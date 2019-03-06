@@ -9,7 +9,7 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tabs_rg" />
+       />
 
     <RadioGroup
         android:id="@+id/tabs_rg"
@@ -50,8 +50,8 @@
 
     <ImageView
         android:id="@+id/sign_iv"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@android:color/transparent"
