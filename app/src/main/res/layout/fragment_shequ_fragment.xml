@@ -61,249 +61,32 @@
             <!--动态详情层-->
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--动态详情-->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="若果你还不能简洁的表达你的想法，说明你还不够了解他"></TextView>
-            </LinearLayout>
-        </LinearLayout>
-        <!--一个动态-->
-        <View xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="#ffffff" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="@color/colorBackground"
-            android:orientation="vertical">
-            <!--用户资料层-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_centerInParent="true"
-                    android:src="@mipmap/touxiang"
-                    app:civ_border_color="@color/dark"
-                    app:civ_border_width="4dp" />
-
-                <View xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorBackground" />
-
-                <LinearLayout
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal">
+                     <!--点赞页面-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/dianzan"></ImageView>
+                <!--评论页面-->
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="彤彤"></TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2018年11月22日"></TextView>
+                    android:src="@mipmap/pinglun"></ImageView>
                 </LinearLayout>
 
-
             </LinearLayout>
-            <!--动态详情层-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="若果你还不能简洁的表达你的想法，说明你还不够了解他"></TextView>
-            </LinearLayout>
         </LinearLayout>
-        <!--一个动态-->
-        <View xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="#ffffff" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="@color/colorBackground"
-            android:orientation="vertical">
-            <!--用户资料层-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_centerInParent="true"
-                    android:src="@mipmap/touxiang"
-                    app:civ_border_color="@color/dark"
-                    app:civ_border_width="4dp" />
-
-                <View xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorBackground" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="彤彤"></TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2018年11月22日"></TextView>
-                </LinearLayout>
-
-
-            </LinearLayout>
-            <!--动态详情层-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="若果你还不能简洁的表达你的想法，说明你还不够了解他"></TextView>
-            </LinearLayout>
-        </LinearLayout>
-        <!--一个动态-->
-        <View xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="#ffffff" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="@color/colorBackground"
-            android:orientation="vertical">
-            <!--用户资料层-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_centerInParent="true"
-                    android:src="@mipmap/touxiang"
-                    app:civ_border_color="@color/dark"
-                    app:civ_border_width="4dp" />
-
-                <View xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorBackground" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="彤彤"></TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2018年11月22日"></TextView>
-                </LinearLayout>
-
-
-            </LinearLayout>
-            <!--动态详情层-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="若果你还不能简洁的表达你的想法，说明你还不够了解他"></TextView>
-            </LinearLayout>
-        </LinearLayout>
-        <!--一个动态-->
-        <View xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="#ffffff" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="@color/colorBackground"
-            android:orientation="vertical">
-            <!--用户资料层-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_centerInParent="true"
-                    android:src="@mipmap/touxiang"
-                    app:civ_border_color="@color/dark"
-                    app:civ_border_width="4dp" />
-
-                <View xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorBackground" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="彤彤"></TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2018年11月22日"></TextView>
-                </LinearLayout>
-
-
-            </LinearLayout>
-            <!--动态详情层-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="若果你还不能简洁的表达你的想法，说明你还不够了解他"></TextView>
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>

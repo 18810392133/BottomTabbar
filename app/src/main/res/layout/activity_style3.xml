@@ -39,7 +39,7 @@
             android:id="@+id/contact_tab"
             style="@style/Custom.TabRadioButton"
             android:drawableTop="@drawable/tab_contact_selector"
-            android:text="通讯录" />
+            android:text="我的" />
 
         <RadioButton
             android:id="@+id/settings_tab"
