@@ -14,7 +14,7 @@ import com.afei.bottomtabbar.dynamic.DynamicActivity;
 import com.afei.bottomtabbar.submenu_fragments.mine_fragment;
 import com.afei.bottomtabbar.submenu_fragments.settings_fragment;
 import com.afei.bottomtabbar.submenu_fragments.shouye_fragment;
-import com.afei.bottomtabbar.submenu_fragments.xiaoxi_fragment;
+import com.afei.bottomtabbar.submenu_fragments.shequ_fragment;
 
 public class Style3Activity extends AppCompatActivity{
 
@@ -32,7 +32,7 @@ public class Style3Activity extends AppCompatActivity{
         mTabRadioGroup = findViewById(R.id.tabs_rg);
         mFragmentSparseArray = new SparseArray<>();
         mFragmentSparseArray.append(R.id.today_tab,new shouye_fragment());
-        mFragmentSparseArray.append(R.id.record_tab,new xiaoxi_fragment());
+        mFragmentSparseArray.append(R.id.record_tab,new shequ_fragment());
         mFragmentSparseArray.append(R.id.contact_tab,new mine_fragment());
         mFragmentSparseArray.append(R.id.settings_tab,new settings_fragment());
         mTabRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
