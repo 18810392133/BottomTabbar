@@ -37,4 +37,21 @@
         <item name="android:textColor">@color/tab_text_color_selector</item>
     </style>
 
+
+    <!-- 共用层样式 -->
+    <style name="base_layout">
+        <item name="android:orientation">horizontal</item>
+         <item name="android:layout_width">match_parent</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:paddingTop">16dp</item>
+         <item name="android:paddingBottom">16dp</item>
+         <item name="android:paddingLeft">12dp</item>
+         <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+         <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+
 </resources>

@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".submenu_fragments.mine_fragment">
+    android:layout_height="match_parent">
 
-    <ImageView android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:src="@mipmap/dynamic"/>
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!--我的本身-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这是我的" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--标题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-</FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="我的"
+                android:textSize="30dp"></TextView>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/tubiao"></ImageView>
+        <include layout="@layout/kongbaiquyu"/>
+        <include layout="@layout/shuipingxian"/>
+
+
+    </LinearLayout>
+</ScrollView>
