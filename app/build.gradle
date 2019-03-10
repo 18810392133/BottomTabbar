@@ -26,7 +26,6 @@ dependencies {
     implementation 'com.android.support:percent:27.1.1'
 //    腾讯的QMUI库
     implementation 'com.qmuiteam:qmui:1.0.4'
-
     implementation 'de.hdodenhof:circleimageview:2.1.0'
 
 }

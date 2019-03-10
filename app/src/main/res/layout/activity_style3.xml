@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".style3.Style3Activity">
+    tools:context=".style3.Style3Activity"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-       />
+        android:layout_below="@+id/toolbar"
+        />
 
     <RadioGroup
         android:id="@+id/tabs_rg"
@@ -24,36 +42,50 @@
             style="@style/Custom.TabRadioButton"
             android:checked="true"
             android:drawableTop="@drawable/tab_sign_selector"
-            android:text="首页" >
-        </RadioButton>
-
-        <RadioButton
-            android:id="@+id/record_tab"
-            style="@style/Custom.TabRadioButton"
-            android:drawableTop="@drawable/tab_record_selector"
-            android:text="社区" />
+            android:text="首页"></RadioButton>
 
         <View style="@style/Custom.TabRadioButton" />
 
         <RadioButton
-            android:id="@+id/contact_tab"
+
             style="@style/Custom.TabRadioButton"
-            android:drawableTop="@drawable/tab_contact_selector"
-            android:text="我的" />
+
+            />
+
 
         <RadioButton
-            android:id="@+id/settings_tab"
+            android:id="@+id/record_tab"
             style="@style/Custom.TabRadioButton"
-            android:drawableTop="@drawable/tab_setting_selector"
-            android:text="设置" />
+            android:drawableTop="@drawable/tab_contact_selector"
+            android:text="社区" />
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/settings_tab"-->
+        <!--style="@style/Custom.TabRadioButton"-->
+        <!--android:drawableTop="@drawable/tab_setting_selector"-->
+        <!--android:text="设置" />-->
     </RadioGroup>
 
     <ImageView
         android:id="@+id/sign_iv"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@android:color/transparent"
         android:src="@mipmap/dynamic" />
+
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:id="@+id/nav_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--app:headerLayout="@layout/nav_header"-->
+        <!--app:menu="@menu/nav_menu" />-->
+
 </RelativeLayout>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:text="这是菜单"/>
+</android.support.v4.widget.DrawerLayout>
