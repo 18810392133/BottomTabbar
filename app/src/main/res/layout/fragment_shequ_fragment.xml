@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".submenu_fragments.shequ_fragment">
-         <!--标题-->
+         <!--标题:社区-->
      <LinearLayout android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal">
@@ -36,7 +36,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -44,22 +43,18 @@
                     android:src="@mipmap/touxiang"
                     app:civ_border_color="@color/dark"
                     app:civ_border_width="4dp" />
-
                 <View xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:background="@color/colorBackground" />
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="彤彤"></TextView>
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -68,6 +63,7 @@
 
 
             </LinearLayout>
+
             <!--动态详情层-->
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -79,20 +75,25 @@
                     android:layout_height="wrap_content"
                     android:text="若果你还不能简洁的表达你的想法，说明你还不够了解他"></TextView>
 
-                <LinearLayout android:layout_height="wrap_content"
+                <RelativeLayout android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:orientation="horizontal">
+                    >
+
                      <!--点赞页面-->
                 <ImageView
+                    android:id="@+id/dianzan"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
-                    android:src="@mipmap/dianzan"></ImageView>
+                    android:src="@mipmap/dianzan"
+                    android:layout_alignParentRight="true"></ImageView>
                 <!--评论页面-->
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/pinglun"></ImageView>
-                </LinearLayout>
+                    android:layout_height="20dp"
+                    android:src="@mipmap/pinglun"
+                    android:layout_toLeftOf="@id/dianzan"
+                    ></ImageView>
+                </RelativeLayout>
 
             </LinearLayout>
 
