@@ -41,6 +41,8 @@ public class Style3Activity extends AppCompatActivity{
         mTabRadioGroup = findViewById(R.id.tabs_rg);
 
 //        设置Toolbar
+
+        //侧边栏
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mDrawLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -49,7 +51,7 @@ public class Style3Activity extends AppCompatActivity{
 
         if(actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_black_32dp);
         }
         navigationView.setCheckedItem(R.id.navigation_home);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

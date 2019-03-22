@@ -2,15 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="180dp"
-    android:background="?attr/colorPrimary"
+    android:background="@mipmap/background"
     android:padding="10dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/icon_image"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:layout_centerInParent="true"
-        android:src="@mipmap/touxiang" />
+        android:src="@mipmap/touxiang"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
 
     <TextView
         android:id="@+id/mail"
@@ -19,6 +22,7 @@
         android:layout_alignParentBottom="true"
         android:text="2541747035@qq.com"
         android:textSize="14sp"/>
+
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
@@ -26,5 +30,7 @@
         android:layout_above="@+id/mail"
         android:text="Tony Green"
         android:textSize="14sp"/>
+
+
 
 </RelativeLayout>
