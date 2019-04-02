@@ -1,6 +1,6 @@
 /*
 SQLyog Ultimate v11.27 (32 bit)
-MySQL - 5.7.21 : Database - beij
+MySQL - 5.6.30-log : Database - beij
 *********************************************************************
 */
 
@@ -203,9 +203,11 @@ CREATE TABLE `user_info_comments` (
   `user_id` int(11) NOT NULL,
   `comment_content` varchar(200) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 /*Data for the table `user_info_comments` */
+
+insert  into `user_info_comments`(`id`,`user_id`,`comment_content`) values (1,123,'努力往前跑呀');
 
 /*Table structure for table `user_info_handbook` */
 
@@ -218,11 +220,11 @@ CREATE TABLE `user_info_handbook` (
   `created` date NOT NULL,
   PRIMARY KEY (`id`),
   KEY `user_info_handbook_created_00986d80` (`created`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 /*Data for the table `user_info_handbook` */
 
-insert  into `user_info_handbook`(`id`,`handbook_name`,`handbook_url`,`created`) values (1,'百乐','http://www.weibo.com','2019-04-02'),(2,'sanling','http://www.weibo.com','2019-04-26');
+insert  into `user_info_handbook`(`id`,`handbook_name`,`handbook_url`,`created`) values (1,'百乐','http://www.weibo.com','2019-04-02');
 
 /*Table structure for table `user_info_image` */
 
@@ -353,11 +355,9 @@ CREATE TABLE `user_info_writing` (
   `created` date NOT NULL,
   PRIMARY KEY (`id`),
   KEY `user_info_writing_created_4d16ee84` (`created`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 /*Data for the table `user_info_writing` */
-
-insert  into `user_info_writing`(`id`,`writing_name`,`writing_url`,`created`) values (1,'百乐','http://www.baidu.com','2019-04-02'),(2,'weijnnlin','www.weijunlin.com','2019-04-18');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
